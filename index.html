@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Lovely Wife ❤️</title>
+
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#171717,#650e20,#e83e67);
+  color:white;
+  min-height:100vh;
+  overflow:hidden;
+}
+
+.slide {
+  display:none;
+  min-height:100vh;
+  padding:25px 15px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.slide.active {
+  display:flex;
+  animation:fade .8s ease;
+}
+
+.card {
+  width:100%;
+  max-width:620px;
+  padding:35px 23px;
+  border-radius:28px;
+  background:rgba(255,255,255,.12);
+  border:2px solid rgba(255,255,255,.3);
+  backdrop-filter:blur(14px);
+  box-shadow:0 15px 50px #0005;
+  position:relative;
+  overflow:hidden;
+}
+
+h1 {
+  color:#ffb5cc;
+  font-size:clamp(30px,7vw,48px);
+  margin:18px 0;
+}
+
+h2 {
+  color:#fff0f5;
+  margin:15px 0;
+}
+
+p {
+  font-size:16px;
+  line-height:1.8;
+  margin:15px 0;
+}
+
+.mouse {
+  font-size:85px;
+  animation:bounce 2s infinite;
+}
+
+button {
+  padding:13px 24px;
+  margin:8px 4px;
+  border:0;
+  border-radius:30px;
+  background:#ffb4ca;
+  color:#6c102c;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover {
+  transform:scale(1.08);
+  background:white;
+}
+
+.prev {
+  background:white;
+}
+
+.nav {
+  margin-top:22px;
+}
+
+.ears {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:15px auto;
+  gap:0;
+}
+
+.ear {
+  width:65px;
+  height:65px;
+  background:#111;
+  border-radius:50%;
+  margin-top:-30px;
+}
+
+.head {
+  width:115px;
+  height:100px;
+  background:#111;
+  border-radius:50%;
+  margin:0 -5px;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:38px;
+}
+
+.heart {
+  position:fixed;
+  bottom:-40px;
+  pointer-events:none;
+  animation:float 7s linear forwards;
+}
+
+@keyframes float {
+  to {
+    transform:translateY(-110vh) rotate(360deg);
+    opacity:0;
+  }
+}
+
+@keyframes bounce {
+  0%,100% {transform:translateY(0)}
+  50% {transform:translateY(-13px)}
+}
+
+@keyframes fade {
+  from {opacity:0;transform:translateY(20px)}
+  to {opacity:1;transform:translateY(0)}
+}
+
+.envelope {
+  font-size:85px;
+  cursor:pointer;
+  animation:bounce 2s infinite;
+  margin:20px;
+}
+
+.footer {
+  font-size:12px;
+  opacity:.7;
+  margin-top:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SLIDE 1 -->
+<section class="slide active">
+<div class="card">
+
+  <div class="ears">
+    <div class="ear"></div>
+    <div class="head">❤️</div>
+    <div class="ear"></div>
+  </div>
+
+  <div class="mouse">🐭🎀</div>
+
+  <h1>HELLO MY LOVE!</h1>
+
+  <h2>Untuk Istriku Tercinta ❤️</h2>
+
+  <p>
+    Hai sayangku...
+    Ada pesan spesial dari seseorang
+    yang paling menyayangimu.
+  </p>
+
+  <div class="envelope" onclick="nextSlide()">💌</div>
+
+  <button onclick="nextSlide()">
+    Buka Pesan Cinta 💕
+  </button>
+
+  <div class="footer">Made with Love by Your Husband ❤️</div>
+
+</div>
+</section>
+
+<!-- SLIDE 2 -->
+<section class="slide">
+<div class="card">
+
+  <div class="mouse">🐭❤️</div>
+
+  <h1>SEMANGAT SAYANG!</h1>
+
+  <p>
+    Selamat bekerja, wanita hebatku!
+    Semoga hari ini semua pekerjaanmu
+    berjalan lancar dan menyenangkan.
+  </p>
+
+  <h2>
+    Jangan lupa senyum ya...
+    Karena senyummu adalah favoritku! 😍
+  </h2>
+
+  <div class="nav">
+    <button class="prev" onclick="prevSlide()">Kembali</button>
+    <button onclick="nextSlide()">Lanjut ❤️</button>
+  </div>
+
+</div>
+</section>
+
+<!-- SLIDE 3 -->
+<section class="slide">
+<div class="card">
+
+  <div class="mouse">🎀🐭</div>
+
+  <h1>JANGAN LUPA MAKAN!</h1>
+
+  <p>
+    Jangan terlalu sibuk bekerja sampai
+    lupa makan dan minum ya, sayang.
+  </p>
+
+  <h2>
+    Aku tidak mau istriku berubah jadi
+    baterai 1% karena lupa mengisi energi! 🔋😂
+  </h2>
+
+  <p>
+    Jaga kesehatan, karena kamu sangat berharga.
+  </p>
+
+  <div class="nav">
+    <button class="prev" onclick="prevSlide()">Kembali</button>
+    <button onclick="nextSlide()">Lanjut ❤️</button>
+  </div>
+
+</div>
+</section>
+
+<!-- SLIDE 4 -->
+<section class="slide">
+<div class="card">
+
+  <div class="mouse">💋🐭</div>
+
+  <h1>TAHU NGGAK?</h1>
+
+  <p>
+    Kalau Mickey punya Minnie,
+    aku punya kamu.
+  </p>
+
+  <h2>
+    Kalau Mickey selalu mengejar Minnie,
+    aku cukup mengejar perhatianmu.
+  </h2>
+
+  <p>
+    Tapi kalau kamu sudah tidur,
+    aku tidak berani mengejar.
+    Takut kena lempar bantal! 🤣❤️
+  </p>
+
+  <div class="nav">
+    <button class="prev" onclick="prevSlide()">Kembali</button>
+    <button onclick="nextSlide()">Lanjut ❤️</button>
+  </div>
+
+</div>
+</section>
+
+<!-- SLIDE 5 -->
+<section class="slide">
+<div class="card">
+
+  <div class="mouse">🥰🐭</div>
+
+  <h1>AKU BANGGA PADAMU!</h1>
+
+  <p>
+    Terima kasih sudah menjadi wanita
+    yang kuat, hebat, dan luar biasa.
+  </p>
+
+  <p>
+    Aku tahu terkadang pekerjaan melelahkan,
+    tapi jangan pernah merasa sendirian.
+  </p>
+
+  <h2>
+    Ada aku yang selalu mendukungmu
+    dalam keadaan apa pun. ❤️
+  </h2>
+
+  <div class="nav">
+    <button class="prev" onclick="prevSlide()">Kembali</button>
+    <button onclick="nextSlide()">Lanjut ❤️</button>
+  </div>
+
+</div>
+</section>
+
+<!-- SLIDE 6 -->
+<section class="slide">
+<div class="card">
+
+  <div class="mouse">💑</div>
+
+  <h1>PESAN DARI SUAMIMU</h1>
+
+  <p>
+    Aku mungkin tidak selalu bisa berada
+    di sampingmu setiap saat.
+  </p>
+
+  <p>
+    Tapi percayalah, doa dan dukunganku
+    selalu menyertaimu.
+  </p>
+
+  <h2>
+    Semoga rezekimu lancar,
+    pekerjaanmu dimudahkan,
+    dan hatimu selalu bahagia.
+  </h2>
+
+  <div class="nav">
+    <button class="prev" onclick="prevSlide()">Kembali</button>
+    <button onclick="nextSlide()">Pesan Terakhir 💌</button>
+  </div>
+
+</div>
+</section>
+
+<!-- SLIDE 7 -->
+<section class="slide">
+<div class="card">
+
+  <div class="mouse">🐭🎀❤️</div>
+
+  <h1>I LOVE YOU!</h1>
+
+  <h2>My Lovely Minnie Mouse 💋</h2>
+
+  <p>
+    Selamat melanjutkan pekerjaan,
+    istriku tersayang.
+  </p>
+
+  <p>
+    Jangan terlalu lelah ya.
+    Pulang nanti ada seseorang
+    yang selalu menantikanmu.
+  </p>
+
+  <h1>MUACHHH! 😘</h1>
+
+  <p>
+    Forever Yours,<br>
+    Your Husband ❤️
+  </p>
+
+  <button onclick="restart()">Baca Lagi 🔄</button>
+
+</div>
+</section>
+
+<!-- MUSIK -->
+<div style="position:fixed;right:10px;top:10px;z-index:10">
+<button onclick="toggleMusic()" id="musicButton">
+🎵 Putar Musik
+</button>
+</div>
+
+<script>
+
+let currentSlide=0;
+const slides=document.querySelectorAll(".slide");
+
+function showSlide(index) {
+  slides.forEach(s=>s.classList.remove("active"));
+  slides[index].classList.add("active");
+  currentSlide=index;
+}
+
+function nextSlide() {
+  if(currentSlide<slides.length-1)
+    showSlide(currentSlide+1);
+}
+
+function prevSlide() {
+  if(currentSlide>0)
+    showSlide(currentSlide-1);
+}
+
+function restart() {
+  showSlide(0);
+}
+
+// HATI BERTERBANGAN
+function createHeart() {
+  const heart=document.createElement("div");
+  heart.className="heart";
+  heart.innerHTML=["❤️","💕","💗","💖","🎀"][
+    Math.floor(Math.random()*5)
+  ];
+
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.fontSize=(15+Math.random()*20)+"px";
+  heart.style.animationDuration=(5+Math.random()*5)+"s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(()=>heart.remove(),10000);
+}
+
+setInterval(createHeart,600);
+
+// MUSIK MELODI SEDERHANA
+let audio;
+let timer;
+let playing=false;
+let note=0;
+
+const melody=[
+  392,440,494,523,494,440,
+  392,440,523,587,523,494,
+  440,494,523,587,659,587
+];
+
+function playNote() {
+  if(!playing)return;
+
+  const oscillator=audio.createOscillator();
+  const gain=audio.createGain();
+
+  oscillator.type="sine";
+  oscillator.frequency.value=melody[note%melody.length];
+
+  gain.gain.setValueAtTime(.0001,audio.currentTime);
+  gain.gain.exponentialRampToValueAtTime(.08,audio.currentTime+.03);
+  gain.gain.exponentialRampToValueAtTime(.0001,audio.currentTime+.3);
+
+  oscillator.connect(gain);
+  gain.connect(audio.destination);
+
+  oscillator.start();
+  oscillator.stop(audio.currentTime+.32);
+
+  note++;
+}
+
+function toggleMusic() {
+  if(!audio) {
+    audio=new(window.AudioContext||window.webkitAudioContext)();
+  }
+
+  if(audio.state==="suspended")audio.resume();
+
+  playing=!playing;
+
+  const btn=document.getElementById("musicButton");
+
+  if(playing) {
+    playNote();
+    timer=setInterval(playNote,350);
+    btn.innerText="⏸ Pause Musik";
+  } else {
+    clearInterval(timer);
+    btn.innerText="🎵 Putar Musik";
+  }
+}
+
+</script>
+
+</body>
+</html>
